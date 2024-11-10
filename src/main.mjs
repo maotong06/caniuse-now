@@ -43,7 +43,7 @@ function main() {
   const markdown = dataToMd(allPropertiesSupportRes)
   fs.writeFileSync(`./dist/css属性占比-${new Date().getFullYear()}.md`, markdown)
   const markdownUse = dataToMd(filterWithCnDesc(allPropertiesSupportRes))
-  fs.writeFileSync('./dist/css属性占比-常用属性.md', markdownUse)
+  fs.writeFileSync(`./dist/css属性占比-常用属性-${new Date().getFullYear()}.md`, markdownUse)
 }
 
 // 处理需要的属性
