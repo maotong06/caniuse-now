@@ -1,0 +1,59 @@
+{
+  "all": "重置几乎所有属性",
+  "animation-composition": "动画组合",
+  "animation-timing-function": {
+    "jump": "离散动画"
+  },
+  "aspect-ratio": "让元素保持一定的宽高比",
+  "backdrop-filter": "背景滤镜",
+  "background-clip": "控制背景的绘制区域，可绘制到边框内",
+  "background-image": {
+    "image-set": "响应式图片, 根据屏幕分辨率加载不同图片"
+  },
+  "block-size": "根据元素的书写模式定义了元素块的横向或纵向尺寸。根据 writing-mode 的值，此属性对应于 width 或 height 属性。可以直接用于设置多行文字垂直居中效果",
+  "box-decoration-break": "用来定义当元素跨多行、多列或多页时，元素的片段应如何呈现。可以用于文本的装饰线条在换行时进行控制",
+  "color-scheme": "控制网页的颜色方案，light dark",
+  "contain": "指示元素及其内容尽可能独立于文档树的其余部分。渲染计算限制为 DOM 子树而不是整个页面从而提供性能优势",
+  "content-visibility": "用于控制元素的内容是否应该被渲染，以及在渲染时是否应该预先生成。这可以用于提高性能, 原生的虚拟列表",
+  "custom-property": {
+    "env": "获取系统一些 css 环境变量，如全面屏的底部高度",
+    "var": "自定义属性，可以在全局使用"
+  },
+  "dominant-baseline": "用于设置行内元素的基线对齐方式。如果 ui 设计师给了你不同字号的文字，要求他们的特定对齐，可以使用这个属性",
+  "filter": "滤镜, 实现模糊、颜色变化、阴影等效果",
+  "font-family": {
+    "system-ui": "使用系统字体。一般是用于国际化，适应不同地区文字"
+  },
+  "gap": "flex, grid, 多列布局的间距",
+  "grid": "网格布局",
+  "grid-template-rows": {
+    "subgrid": "子网格"
+  },
+  "image-orientation": "控制图片的方向。可以用于矫正手机相机横屏拍摄的图片方向",
+  "inline-size": "同 block-size，但是是行内元素的宽高。可以用于多行文字的垂直居中效果",
+  "line-break": "控制文本的换行方式。更好的控制中文的换行",
+  "mask": "通过在特定点遮罩或剪切图像来隐藏元素（部分或全部）。可以用于实现弹幕效果，如果加上前缀 -webkit- 其实各个浏览器很早就支持了。",
+  "object-fit": "控制img元素的填充方式",
+  "object-position": "控制img元素内部图片的位置",
+  "offset": "沿定义路径对元素进行动画处理所需的所有属性",
+  "outline": "轮廓线，不占用空间。可以用于实现点击高亮效果",
+  "overscroll-behavior": "控制滚动到边界时的行为",
+  "position": {
+    "sticky": "粘性定位，可以用于实现吸顶效果"
+  },
+  "scroll-behavior": {
+    "smooth": "平滑滚动"
+  },
+  "scroll-snap-type": "通过在对齐端口中设置对齐点强制的方向和严格性来选择将其加入滚动对齐。原生的轮播图效果",
+  "text-wrap": "控制文本的换行方式。有更多的换行方式",
+  "transform": "变形",
+  "width": {
+    "fit-content": "使用可用空间，但不要超过 max-content，即 min(max-content, max(min-content, stretch)) 。换句话说，就是保持默认的换行逻辑，并维持最小宽度，但是也不会超过父容器的宽度。可以实现水平居中效果",
+    "min-content": "根据内容最小宽度，尽量换行",
+    "max-content": "根据内容最大宽度，文字不会换行"
+  },
+  "has": "伪类选择器 has() 用于检查元素是否具有指定的选择器的特征。可以用于实现父元素的样式控制，或兄弟元素的样式控制",
+  "not": "伪类选择器 not() 用于命中不匹配指定选择器的元素。",
+  "is": "伪类选择器 is() 用于检查元素是否匹配指定的选择器。",
+  "@container": "容器查询 @container，可以用于精细设置媒体查询下某些容器的样式"
+}
