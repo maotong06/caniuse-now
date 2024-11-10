@@ -7,7 +7,7 @@ import { getMaxVersion, sumUsagePercY, compareVersion, getPropVersion,
   getMaxAddDate, getSupportPerc, checkIsAvailable, 
   toFixed, renameKey, filterWithCnDesc } from './utils.mjs'
 import { formateBrowsersPercData } from './formatPercData.mjs'
-import { dataToMd, genReadme } from './toMd.mjs'
+import { dataToMd } from './toMd.mjs'
 const cssProperties = bcd.css.properties
 const bcdBrowsers = bcd.browsers
 
@@ -41,7 +41,7 @@ function main() {
 
   // 转换为markdown
   const markdown = dataToMd(allPropertiesSupportRes)
-  fs.writeFileSync('./README.md', genReadme() + markdown)
+  fs.writeFileSync(`./dist/css属性占比-${new Date().getFullYear()}.md`, markdown)
   const markdownUse = dataToMd(filterWithCnDesc(allPropertiesSupportRes))
   fs.writeFileSync('./dist/css属性占比-常用属性.md', markdownUse)
 }
