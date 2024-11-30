@@ -36,7 +36,7 @@
   "object-position": "控制img元素内部图片的位置",
   "offset": "沿定义路径对元素进行动画处理所需的所有属性",
   "outline": "轮廓线，不占用空间。可以用于实现点击高亮效果",
-  "overscroll-behavior": "控制滚动到边界时的行为",
+  "overscroll-behavior": "控制滚动到边界时的行为，根元素是不是要继续滚动",
   "position": {
     "sticky": "粘性定位，可以用于实现吸顶效果"
   },
